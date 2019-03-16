@@ -1,0 +1,2 @@
+module Api::QuiltsHelper
+end
