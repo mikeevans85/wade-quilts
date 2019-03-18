@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   	get "/quilts" => "quilts#index"
   	get "/quilts/:id" => "quilts#show"
+  	
   # Admin routes
 
     post "/admins" => "admins#create"
