@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # Public-facing routes
 
   	get "/quilts" => "quilts#index"
+
+    # This is not public-facing but is here to be restful!
+    post "/quilts" => "quilts#create"
+
   	get "/quilts/:id" => "quilts#show"
   	
   # Admin routes
@@ -13,7 +17,6 @@ Rails.application.routes.draw do
 
     post "/sessions" => "sessions#create"
 
-    post "/quilts" => "quilts#create"
     patch "/quilts/:id" => "quilts#update"
     delete "/quilts/:id" => "quilts#destroy"
 
