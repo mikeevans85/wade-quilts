@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   	get "/quilts" => "quilts#index"
 
-    # This is not public-facing but is here to be restful!
+    # This route is not public-facing but is here to be restful!
     post "/quilts" => "quilts#create"
 
   	get "/quilts/:id" => "quilts#show"
